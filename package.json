@@ -1,7 +1,7 @@
 {
   "name": "restapi-learning",
   "version": "1.0.0",
-  "description": "",
+  "description": "Rest-API CRUD implementation with REstClient VScode extention.",
   "main": "index.js",
   "scripts": {
     "devstart" : "nodemon server.js"

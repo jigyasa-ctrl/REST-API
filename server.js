@@ -19,8 +19,6 @@ app.use(express.json()) // to accept json format from get, put requests
 const subscribersRouter = require('./routers/subscribers');
 app.use('/subscribers', subscribersRouter);
 
-const subscribersRuter = require('./routers/subscribers')
-
 
 //runs when server has started
 app.listen(3000, () => console.log("Listening at port 3000..."))

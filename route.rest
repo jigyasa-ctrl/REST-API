@@ -9,7 +9,7 @@ Content-Type: application/json
 
 {
     "name" : "Jigyasa Upadhyay",
-    "subscribedToChannel" : "Rest API "
+    "subscribedToChannel" : "Rest API"
 }
 
 ###

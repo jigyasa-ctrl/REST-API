@@ -1,6 +1,5 @@
 //File to create routes
 const express = require("express");
-const subscriber = require("../models/subscriber");
 
 const router = express.Router();
 
@@ -19,7 +18,7 @@ router.get("/", async (req, res) => {
 
 //Getting one subsriber
 router.get("/:id", getSubscriber, (req, res) => {
-    //colon represents that id is a parameter which acan be passed
+    //colon represents that id is a parameter which can be passed
     //res.send(req.params.id)
     res.send(res.subscriber);
 });
@@ -69,6 +68,7 @@ router.delete("/:id", getSubscriber, async (req, res) => {
     }
 });
 
+//This function is to get the object related to a particular id
 async function getSubscriber(req, res, next) {
     try {
         subscribers = await Subscriber.findById(req.params.id);
