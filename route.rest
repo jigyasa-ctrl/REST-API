@@ -1,0 +1,27 @@
+GET http://localhost:3000/subscribers
+
+###
+GET http://localhost:3000/subscribers/60d807577c59fa261c898e08
+
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name" : "Jigyasa Upadhyay",
+    "subscribedToChannel" : "Rest API "
+}
+
+###
+
+DELETE  http://localhost:3000/subscribers/60d817c789bfa80568f8195d
+
+###
+
+PATCH http://localhost:3000/subscribers/60d818de2812db34f4721339
+Content-Type: application/json
+
+{
+    "name" : "Test User",
+    "subscribedToChannel" : "New Channel"
+}
